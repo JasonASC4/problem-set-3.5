@@ -22,6 +22,7 @@ public class ProblemSet3_5 {
 		// test your solutions here
 		
 		ps.primes(1, 1000);
+		ps.leapYears(-1);
 	}
 	
 	/**
@@ -50,7 +51,30 @@ public class ProblemSet3_5 {
 	 */
 	
 	public void leapYears(int count) {
-		
+
+	    int Year;
+	    Year = count;
+
+	    if (Year < 100) {
+	        if (Year > 40) {
+	            Year = Year + 1900;
+	        } else {
+	            Year = Year + 2000;
+	        }
+	    }
+
+	    if (Year % 4 == 0) {
+	        if (Year % 100 != 0) {
+	            System.out.println("IT IS A LEAP YEAR");
+	        } else if (Year % 400 == 0) {
+	            System.out.println("IT IS A LEAP YEAR");
+	        } else {
+	            System.out.println("IT IS NOT A LEAP YEAR");
+	        }
+	    } else {
+	        System.out.println("IT IS NOT A LEAP YEAR");
+	    }
+	
 	}
 	
 	/**
@@ -63,7 +87,7 @@ public class ProblemSet3_5 {
 	 */
 	
 	public void palindromicNumbers(int number) {
-		
+		int
 	}
 	
 	/**
