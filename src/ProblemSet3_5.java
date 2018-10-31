@@ -187,7 +187,7 @@ public class ProblemSet3_5 {
 	
 	public void multiples(int x, int y, int limit) {
 		long sum = 0;
-		for (int m = 0; m < limit; m++) (
+		for (int m = 0; m < limit; m++) {
 			if (m % x == 0 || m % y == 0) {
 				sum += m;
 			}
